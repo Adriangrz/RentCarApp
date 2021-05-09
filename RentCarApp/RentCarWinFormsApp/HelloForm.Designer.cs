@@ -76,10 +76,10 @@ namespace RentCarWinFormsApp
             this.btnContinue.FlatAppearance.BorderSize = 0;
             this.btnContinue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnContinue.Location = new System.Drawing.Point(269, 28);
+            this.btnContinue.Location = new System.Drawing.Point(268, 28);
             this.btnContinue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(149, 36);
+            this.btnContinue.Size = new System.Drawing.Size(150, 36);
             this.btnContinue.TabIndex = 0;
             this.btnContinue.Text = "Przejdź dalej";
             this.btnContinue.UseVisualStyleBackColor = false;

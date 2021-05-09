@@ -69,9 +69,9 @@ namespace RentCarWinFormsApp
             this.pnlTitle.Controls.Add(this.lblTitle);
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
-            this.pnlTitle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pnlTitle.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(702, 71);
+            this.pnlTitle.Size = new System.Drawing.Size(702, 67);
             this.pnlTitle.TabIndex = 0;
             // 
             // lblTitle
@@ -79,9 +79,9 @@ namespace RentCarWinFormsApp
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(702, 71);
+            this.lblTitle.Size = new System.Drawing.Size(702, 67);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Wpisz swoje dane by potwierdzić wypożyczenie";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -91,10 +91,10 @@ namespace RentCarWinFormsApp
             this.pnlAcceptOrBack.Controls.Add(this.btnConfirmRental);
             this.pnlAcceptOrBack.Controls.Add(this.btnBack);
             this.pnlAcceptOrBack.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlAcceptOrBack.Location = new System.Drawing.Point(0, 412);
-            this.pnlAcceptOrBack.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pnlAcceptOrBack.Location = new System.Drawing.Point(0, 417);
+            this.pnlAcceptOrBack.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.pnlAcceptOrBack.Name = "pnlAcceptOrBack";
-            this.pnlAcceptOrBack.Size = new System.Drawing.Size(702, 75);
+            this.pnlAcceptOrBack.Size = new System.Drawing.Size(702, 70);
             this.pnlAcceptOrBack.TabIndex = 1;
             // 
             // btnConfirmRental
@@ -104,10 +104,10 @@ namespace RentCarWinFormsApp
             this.btnConfirmRental.FlatAppearance.BorderSize = 0;
             this.btnConfirmRental.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmRental.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnConfirmRental.Location = new System.Drawing.Point(376, 18);
-            this.btnConfirmRental.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnConfirmRental.Location = new System.Drawing.Point(380, 17);
+            this.btnConfirmRental.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnConfirmRental.Name = "btnConfirmRental";
-            this.btnConfirmRental.Size = new System.Drawing.Size(128, 38);
+            this.btnConfirmRental.Size = new System.Drawing.Size(150, 36);
             this.btnConfirmRental.TabIndex = 1;
             this.btnConfirmRental.Text = "Potwierdz";
             this.btnConfirmRental.UseVisualStyleBackColor = false;
@@ -119,10 +119,10 @@ namespace RentCarWinFormsApp
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBack.Location = new System.Drawing.Point(199, 18);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnBack.Location = new System.Drawing.Point(173, 17);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(128, 38);
+            this.btnBack.Size = new System.Drawing.Size(150, 36);
             this.btnBack.TabIndex = 0;
             this.btnBack.Text = "Wstecz";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -138,8 +138,8 @@ namespace RentCarWinFormsApp
             this.tlpnlUserData.Controls.Add(this.pnlData5, 0, 5);
             this.tlpnlUserData.Controls.Add(this.pnlData6, 0, 6);
             this.tlpnlUserData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpnlUserData.Location = new System.Drawing.Point(0, 71);
-            this.tlpnlUserData.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tlpnlUserData.Location = new System.Drawing.Point(0, 67);
+            this.tlpnlUserData.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.tlpnlUserData.Name = "tlpnlUserData";
             this.tlpnlUserData.RowCount = 8;
             this.tlpnlUserData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -150,7 +150,7 @@ namespace RentCarWinFormsApp
             this.tlpnlUserData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tlpnlUserData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tlpnlUserData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tlpnlUserData.Size = new System.Drawing.Size(702, 341);
+            this.tlpnlUserData.Size = new System.Drawing.Size(702, 350);
             this.tlpnlUserData.TabIndex = 2;
             // 
             // pnlData1
@@ -158,18 +158,20 @@ namespace RentCarWinFormsApp
             this.pnlData1.Controls.Add(this.txtbName);
             this.pnlData1.Controls.Add(this.lblName);
             this.pnlData1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlData1.Location = new System.Drawing.Point(3, 45);
+            this.pnlData1.Location = new System.Drawing.Point(4, 46);
+            this.pnlData1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlData1.Name = "pnlData1";
-            this.pnlData1.Size = new System.Drawing.Size(696, 36);
+            this.pnlData1.Size = new System.Drawing.Size(694, 37);
             this.pnlData1.TabIndex = 0;
             // 
             // txtbName
             // 
             this.txtbName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbName.Location = new System.Drawing.Point(344, 8);
+            this.txtbName.Location = new System.Drawing.Point(342, 9);
+            this.txtbName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtbName.Name = "txtbName";
-            this.txtbName.Size = new System.Drawing.Size(172, 21);
+            this.txtbName.Size = new System.Drawing.Size(200, 21);
             this.txtbName.TabIndex = 1;
             // 
             // lblName
@@ -177,7 +179,8 @@ namespace RentCarWinFormsApp
             this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblName.Location = new System.Drawing.Point(181, 9);
+            this.lblName.Location = new System.Drawing.Point(152, 9);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(33, 17);
             this.lblName.TabIndex = 0;
@@ -189,18 +192,20 @@ namespace RentCarWinFormsApp
             this.pnlData2.Controls.Add(this.txtbSurname);
             this.pnlData2.Controls.Add(this.lblSurname);
             this.pnlData2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlData2.Location = new System.Drawing.Point(3, 87);
+            this.pnlData2.Location = new System.Drawing.Point(4, 89);
+            this.pnlData2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlData2.Name = "pnlData2";
-            this.pnlData2.Size = new System.Drawing.Size(696, 36);
+            this.pnlData2.Size = new System.Drawing.Size(694, 37);
             this.pnlData2.TabIndex = 1;
             // 
             // txtbSurname
             // 
             this.txtbSurname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbSurname.Location = new System.Drawing.Point(345, 8);
+            this.txtbSurname.Location = new System.Drawing.Point(343, 9);
+            this.txtbSurname.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtbSurname.Name = "txtbSurname";
-            this.txtbSurname.Size = new System.Drawing.Size(172, 21);
+            this.txtbSurname.Size = new System.Drawing.Size(200, 21);
             this.txtbSurname.TabIndex = 1;
             // 
             // lblSurname
@@ -208,7 +213,8 @@ namespace RentCarWinFormsApp
             this.lblSurname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSurname.AutoSize = true;
             this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSurname.Location = new System.Drawing.Point(180, 9);
+            this.lblSurname.Location = new System.Drawing.Point(151, 9);
+            this.lblSurname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSurname.Name = "lblSurname";
             this.lblSurname.Size = new System.Drawing.Size(67, 17);
             this.lblSurname.TabIndex = 0;
@@ -220,18 +226,20 @@ namespace RentCarWinFormsApp
             this.pnlData3.Controls.Add(this.txtbCity);
             this.pnlData3.Controls.Add(this.lblCity);
             this.pnlData3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlData3.Location = new System.Drawing.Point(3, 129);
+            this.pnlData3.Location = new System.Drawing.Point(4, 132);
+            this.pnlData3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlData3.Name = "pnlData3";
-            this.pnlData3.Size = new System.Drawing.Size(696, 36);
+            this.pnlData3.Size = new System.Drawing.Size(694, 37);
             this.pnlData3.TabIndex = 2;
             // 
             // txtbCity
             // 
             this.txtbCity.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbCity.Location = new System.Drawing.Point(344, 8);
+            this.txtbCity.Location = new System.Drawing.Point(342, 9);
+            this.txtbCity.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtbCity.Name = "txtbCity";
-            this.txtbCity.Size = new System.Drawing.Size(172, 21);
+            this.txtbCity.Size = new System.Drawing.Size(200, 21);
             this.txtbCity.TabIndex = 1;
             // 
             // lblCity
@@ -239,7 +247,8 @@ namespace RentCarWinFormsApp
             this.lblCity.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCity.AutoSize = true;
             this.lblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCity.Location = new System.Drawing.Point(180, 9);
+            this.lblCity.Location = new System.Drawing.Point(151, 9);
+            this.lblCity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCity.Name = "lblCity";
             this.lblCity.Size = new System.Drawing.Size(49, 17);
             this.lblCity.TabIndex = 0;
@@ -251,18 +260,20 @@ namespace RentCarWinFormsApp
             this.pnlData4.Controls.Add(this.txtbStreet);
             this.pnlData4.Controls.Add(this.lblStreet);
             this.pnlData4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlData4.Location = new System.Drawing.Point(3, 171);
+            this.pnlData4.Location = new System.Drawing.Point(4, 175);
+            this.pnlData4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlData4.Name = "pnlData4";
-            this.pnlData4.Size = new System.Drawing.Size(696, 36);
+            this.pnlData4.Size = new System.Drawing.Size(694, 37);
             this.pnlData4.TabIndex = 3;
             // 
             // txtbStreet
             // 
             this.txtbStreet.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbStreet.Location = new System.Drawing.Point(344, 8);
+            this.txtbStreet.Location = new System.Drawing.Point(342, 9);
+            this.txtbStreet.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtbStreet.Name = "txtbStreet";
-            this.txtbStreet.Size = new System.Drawing.Size(172, 21);
+            this.txtbStreet.Size = new System.Drawing.Size(200, 21);
             this.txtbStreet.TabIndex = 1;
             // 
             // lblStreet
@@ -270,7 +281,8 @@ namespace RentCarWinFormsApp
             this.lblStreet.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblStreet.AutoSize = true;
             this.lblStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblStreet.Location = new System.Drawing.Point(181, 9);
+            this.lblStreet.Location = new System.Drawing.Point(152, 9);
+            this.lblStreet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStreet.Name = "lblStreet";
             this.lblStreet.Size = new System.Drawing.Size(39, 17);
             this.lblStreet.TabIndex = 0;
@@ -282,18 +294,20 @@ namespace RentCarWinFormsApp
             this.pnlData5.Controls.Add(this.txtbPhoneNumber);
             this.pnlData5.Controls.Add(this.lblPhoneNumber);
             this.pnlData5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlData5.Location = new System.Drawing.Point(3, 213);
+            this.pnlData5.Location = new System.Drawing.Point(4, 218);
+            this.pnlData5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlData5.Name = "pnlData5";
-            this.pnlData5.Size = new System.Drawing.Size(696, 36);
+            this.pnlData5.Size = new System.Drawing.Size(694, 37);
             this.pnlData5.TabIndex = 4;
             // 
             // txtbPhoneNumber
             // 
             this.txtbPhoneNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbPhoneNumber.Location = new System.Drawing.Point(344, 8);
+            this.txtbPhoneNumber.Location = new System.Drawing.Point(342, 9);
+            this.txtbPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtbPhoneNumber.Name = "txtbPhoneNumber";
-            this.txtbPhoneNumber.Size = new System.Drawing.Size(172, 21);
+            this.txtbPhoneNumber.Size = new System.Drawing.Size(200, 21);
             this.txtbPhoneNumber.TabIndex = 1;
             // 
             // lblPhoneNumber
@@ -301,7 +315,8 @@ namespace RentCarWinFormsApp
             this.lblPhoneNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPhoneNumber.AutoSize = true;
             this.lblPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPhoneNumber.Location = new System.Drawing.Point(180, 9);
+            this.lblPhoneNumber.Location = new System.Drawing.Point(151, 9);
+            this.lblPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
             this.lblPhoneNumber.Size = new System.Drawing.Size(105, 17);
             this.lblPhoneNumber.TabIndex = 0;
@@ -313,18 +328,20 @@ namespace RentCarWinFormsApp
             this.pnlData6.Controls.Add(this.txtbEmail);
             this.pnlData6.Controls.Add(this.lblEmail);
             this.pnlData6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlData6.Location = new System.Drawing.Point(3, 255);
+            this.pnlData6.Location = new System.Drawing.Point(4, 261);
+            this.pnlData6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pnlData6.Name = "pnlData6";
-            this.pnlData6.Size = new System.Drawing.Size(696, 36);
+            this.pnlData6.Size = new System.Drawing.Size(694, 37);
             this.pnlData6.TabIndex = 5;
             // 
             // txtbEmail
             // 
             this.txtbEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbEmail.Location = new System.Drawing.Point(344, 8);
+            this.txtbEmail.Location = new System.Drawing.Point(342, 9);
+            this.txtbEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtbEmail.Name = "txtbEmail";
-            this.txtbEmail.Size = new System.Drawing.Size(172, 21);
+            this.txtbEmail.Size = new System.Drawing.Size(200, 21);
             this.txtbEmail.TabIndex = 1;
             // 
             // lblEmail
@@ -332,7 +349,8 @@ namespace RentCarWinFormsApp
             this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEmail.Location = new System.Drawing.Point(180, 9);
+            this.lblEmail.Location = new System.Drawing.Point(151, 9);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(42, 17);
             this.lblEmail.TabIndex = 0;
@@ -341,13 +359,13 @@ namespace RentCarWinFormsApp
             // 
             // CustomerDataUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tlpnlUserData);
             this.Controls.Add(this.pnlAcceptOrBack);
             this.Controls.Add(this.pnlTitle);
-            this.Font = new System.Drawing.Font("Californian FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.Name = "CustomerDataUserControl";
             this.Size = new System.Drawing.Size(702, 487);
             this.pnlTitle.ResumeLayout(false);

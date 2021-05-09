@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EFDatabaseAccess;
+using RentCarWinFormsApp.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,6 +48,18 @@ namespace RentCarWinFormsApp
 
         private void BtnSelectTimeRange_Click(object sender, EventArgs e)
         {
+            var reservationFrom = carRentalTimeRangeUserControl.RentFromDate;
+            var reservationTo = carRentalTimeRangeUserControl.RentToDate;
+            using var context = new RentCarContext();
+            var data = context.Cars.Except(
+                context.Cars.Join(context.Rents, c => c.CarId, r => r.CarId, (car, rent) => new { car, rent })
+                .Where(x => ((reservationFrom >= x.rent.DateOfRentFrom && reservationFrom <= x.rent.DateOfRentTo) ||
+                 (reservationTo >= x.rent.DateOfRentFrom && reservationTo <= x.rent.DateOfRentTo) ||
+                 (reservationFrom >= x.rent.DateOfRentFrom && reservationTo <= x.rent.DateOfRentTo) ||
+                 (reservationFrom <= x.rent.DateOfRentFrom && reservationTo >= x.rent.DateOfRentTo)))
+                .Select(x => x.car))
+                .Select(x => new CarModel{ CarId = x.CarId, Make = x.Make, Model = x.Model, ProdYear = x.ProdYear, Transmission = x.Transmission, Fuel = x.Fuel, Price = x.Price });
+            selectingCarForRentalUserControl.CarListToRent = data.ToList();
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(selectingCarForRentalUserControl);
         }
