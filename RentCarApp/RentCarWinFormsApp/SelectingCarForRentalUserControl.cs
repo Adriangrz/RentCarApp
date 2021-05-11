@@ -1,4 +1,5 @@
 ﻿using EFDatabaseAccess;
+using RentCarWinFormsApp.Database;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,19 +27,38 @@ namespace RentCarWinFormsApp
                 dgvCarList.DataSource = value;
             } 
         }
+        public DateTime CarRentalFrom { get; set; }
+        public DateTime CarRentalTo { get; set; }
+        public decimal TotalPrice { get; private set; } = 0;
+        public Guid? CarId { get; set; } = null;
 
-        private void dgvCarList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void ClearForm()
         {
-            if (dgvCarList.Columns[e.ColumnIndex].Name == "ShowCar")
+            picbCar.Image = null;
+            lblTotalRentalPrice.Text = "Wybierz samochód by zobaczyć całkowitą cene";
+            CarId = null;
+            lblPicCar.Visible = true;
+        }
+
+        private async void DgvCarList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvCarList.Columns[e.ColumnIndex].Name != "ShowCar")
+                return;
+            var carId = dgvCarList.Rows[e.RowIndex].Cells[dgvCarList.Columns["CarId"].Index].Value;
+            bool parseIsSuccess = decimal.TryParse(dgvCarList.Rows[e.RowIndex].Cells[dgvCarList.Columns["Price"].Index].Value.ToString(), out decimal price);
+            if (!parseIsSuccess)
             {
-                var carId = dgvCarList.Rows[e.RowIndex].Cells[1].Value;
-                using var context = new RentCarContext();
-                
-                var data = context.Cars.Where(x => x.CarId == (Guid)carId).Select(x => x.PictureLink).SingleOrDefault();
-                lblPicCar.Visible = false;
-                using MemoryStream ms = new MemoryStream(data);
-                picbCar.Image = Image.FromStream(ms);              
+                MessageBox.Show("Coś poszło nie tak");
+                return;
             }
+            lblPicCar.Visible = false;
+            using var ms = new MemoryStream(await DatabaseManagement.GetCarImage(carId));
+            picbCar.Image = Image.FromStream(ms);
+
+            var rentTime = (CarRentalTo - CarRentalFrom).TotalDays;
+            TotalPrice = (decimal)(rentTime * decimal.ToDouble(price));
+            lblTotalRentalPrice.Text = (TotalPrice).ToString("0.##");
+            CarId = (Guid)carId;
         }
     }
 }

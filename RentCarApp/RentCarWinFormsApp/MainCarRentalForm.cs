@@ -1,4 +1,6 @@
 ﻿using EFDatabaseAccess;
+using EFDatabaseAccess.Models;
+using RentCarWinFormsApp.Database;
 using RentCarWinFormsApp.Models;
 using System;
 using System.Collections.Generic;
@@ -46,50 +48,63 @@ namespace RentCarWinFormsApp
             this.Hide();
         }
 
-        private void BtnSelectTimeRange_Click(object sender, EventArgs e)
+        private async void BtnSelectTimeRange_Click(object sender, EventArgs e)
         {
-            var reservationFrom = carRentalTimeRangeUserControl.RentFromDate;
-            var reservationTo = carRentalTimeRangeUserControl.RentToDate;
-            using var context = new RentCarContext();
-            var data = context.Cars.Except(
-                context.Cars.Join(context.Rents, c => c.CarId, r => r.CarId, (car, rent) => new { car, rent })
-                .Where(x => ((reservationFrom >= x.rent.DateOfRentFrom && reservationFrom <= x.rent.DateOfRentTo) ||
-                 (reservationTo >= x.rent.DateOfRentFrom && reservationTo <= x.rent.DateOfRentTo) ||
-                 (reservationFrom >= x.rent.DateOfRentFrom && reservationTo <= x.rent.DateOfRentTo) ||
-                 (reservationFrom <= x.rent.DateOfRentFrom && reservationTo >= x.rent.DateOfRentTo)))
-                .Select(x => x.car))
-                .Select(x => new CarModel{ CarId = x.CarId, Make = x.Make, Model = x.Model, ProdYear = x.ProdYear, Transmission = x.Transmission, Fuel = x.Fuel, Price = x.Price });
-            selectingCarForRentalUserControl.CarListToRent = data.ToList();
+            DateTime carRentalFrom = carRentalTimeRangeUserControl.RentFromDate;
+            DateTime carRentalTo = carRentalTimeRangeUserControl.RentToDate;
+            if (carRentalTo.CompareTo(carRentalFrom) <= 0)
+            {
+                MessageBox.Show("Data zwrotu nie może być mniejsza lub równa odbioru");
+                return;
+            }
+            selectingCarForRentalUserControl.CarListToRent = await DatabaseManagement.GetCarList(carRentalFrom, carRentalTo);
+            selectingCarForRentalUserControl.CarRentalFrom = carRentalFrom;
+            selectingCarForRentalUserControl.CarRentalTo = carRentalTo;
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(selectingCarForRentalUserControl);
         }
 
         private void BtnReserv_Click(object sender, EventArgs e)
         {
+            if (selectingCarForRentalUserControl.CarId is null)
+            {
+                MessageBox.Show("Musisz wybrać samochód");
+                return;
+            }
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(customerDataUserControl);
         }
 
-        private void BtnConfirmRental_Click(object sender, EventArgs e)
+        private async void BtnConfirmRental_Click(object sender, EventArgs e)
         {
+            if (!customerDataUserControl.CheckIfAllCustomerDataAreProvided())
+                return;
+            DateTime carRentalFrom = carRentalTimeRangeUserControl.RentFromDate;
+            DateTime carRentalTo = carRentalTimeRangeUserControl.RentToDate;
+            decimal totalCost = selectingCarForRentalUserControl.TotalPrice;
+            await DatabaseManagement.SaveRentalDetails(customerDataUserControl, selectingCarForRentalUserControl, carRentalFrom, carRentalTo, totalCost);
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(carRentalConfirmationUserControl);
         }
 
         private void BtnBackToSelectingCarForRental_Click(object sender, EventArgs e)
         {
+            customerDataUserControl.ClearForm();
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(selectingCarForRentalUserControl);
         }
 
         private void BtnBackToCarRentalTimeRange_Click(object sender, EventArgs e)
         {
+            selectingCarForRentalUserControl.ClearForm();
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(carRentalTimeRangeUserControl);
         }
 
         private void BtnBackToApp_Click(object sender, EventArgs e)
         {
+            selectingCarForRentalUserControl.ClearForm();
+            customerDataUserControl.ClearForm();
             pnlMain.Controls.Clear();
             pnlMain.Controls.Add(carRentalTimeRangeUserControl);
         }

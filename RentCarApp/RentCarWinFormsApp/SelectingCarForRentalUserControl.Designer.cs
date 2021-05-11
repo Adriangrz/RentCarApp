@@ -163,7 +163,7 @@ namespace RentCarWinFormsApp
             this.dgvCarList.RowTemplate.Height = 25;
             this.dgvCarList.Size = new System.Drawing.Size(341, 403);
             this.dgvCarList.TabIndex = 1;
-            this.dgvCarList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCarList_CellContentClick);
+            this.dgvCarList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCarList_CellContentClick);
             // 
             // ShowCar
             // 

@@ -131,8 +131,9 @@ namespace RentCarWinFormsApp
             // dtpRentFromTime
             // 
             this.dtpRentFromTime.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpRentFromTime.CustomFormat = "HH:mm";
             this.dtpRentFromTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpRentFromTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpRentFromTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpRentFromTime.Location = new System.Drawing.Point(557, 24);
             this.dtpRentFromTime.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpRentFromTime.Name = "dtpRentFromTime";
@@ -179,8 +180,9 @@ namespace RentCarWinFormsApp
             // dtpRentToTime
             // 
             this.dtpRentToTime.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpRentToTime.CustomFormat = "HH:mm";
             this.dtpRentToTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpRentToTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpRentToTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpRentToTime.Location = new System.Drawing.Point(557, 24);
             this.dtpRentToTime.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpRentToTime.Name = "dtpRentToTime";

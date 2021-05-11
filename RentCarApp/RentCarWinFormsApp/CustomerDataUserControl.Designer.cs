@@ -29,6 +29,7 @@ namespace RentCarWinFormsApp
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlAcceptOrBack = new System.Windows.Forms.Panel();
@@ -53,6 +54,7 @@ namespace RentCarWinFormsApp
             this.pnlData6 = new System.Windows.Forms.Panel();
             this.txtbEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
+            this.erPrvCustomerData = new System.Windows.Forms.ErrorProvider(this.components);
             this.pnlTitle.SuspendLayout();
             this.pnlAcceptOrBack.SuspendLayout();
             this.tlpnlUserData.SuspendLayout();
@@ -62,6 +64,7 @@ namespace RentCarWinFormsApp
             this.pnlData4.SuspendLayout();
             this.pnlData5.SuspendLayout();
             this.pnlData6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erPrvCustomerData)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTitle
@@ -357,6 +360,10 @@ namespace RentCarWinFormsApp
             this.lblEmail.Text = "Email";
             this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // erPrvCustomerData
+            // 
+            this.erPrvCustomerData.ContainerControl = this;
+            // 
             // CustomerDataUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -383,6 +390,7 @@ namespace RentCarWinFormsApp
             this.pnlData5.PerformLayout();
             this.pnlData6.ResumeLayout(false);
             this.pnlData6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erPrvCustomerData)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -414,5 +422,6 @@ namespace RentCarWinFormsApp
         private System.Windows.Forms.TextBox txtbPhoneNumber;
         private System.Windows.Forms.TextBox txtbEmail;
         private System.Windows.Forms.TextBox txtbSurname;
+        private System.Windows.Forms.ErrorProvider erPrvCustomerData;
     }
 }
