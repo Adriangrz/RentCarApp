@@ -87,14 +87,13 @@ namespace RentCarWinFormsApp
             // 
             // HelloForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(686, 448);
             this.Controls.Add(this.pnlHello);
             this.Controls.Add(this.pnlContinue);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "HelloForm";
-            this.Text = "HelloForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HelloForm_FormClosing);
             this.pnlHello.ResumeLayout(false);
             this.pnlContinue.ResumeLayout(false);

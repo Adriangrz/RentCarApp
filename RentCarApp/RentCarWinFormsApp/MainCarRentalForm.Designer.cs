@@ -43,13 +43,13 @@ namespace RentCarWinFormsApp
             // 
             // MainCarRentalForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(686, 448);
             this.Controls.Add(this.pnlMain);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "MainCarRentalForm";
-            this.Text = "MainCarRentalForm";
+            this.Text = "Wypożyczanie samochodu";
             this.Shown += new System.EventHandler(this.MainCarRentalForm_Shown);
             this.ResumeLayout(false);
 

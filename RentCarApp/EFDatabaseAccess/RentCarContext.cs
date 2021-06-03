@@ -28,7 +28,7 @@ namespace EFDatabaseAccess
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=localhost,1455;Database=RentCarDatabase;User Id=sa;Password=7A!pp5!3Rent4!5Car7;");
+                optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["RentCarDatabase"].ConnectionString);
             }
         }
 

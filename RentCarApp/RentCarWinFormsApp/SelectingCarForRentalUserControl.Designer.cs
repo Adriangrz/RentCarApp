@@ -108,7 +108,7 @@ namespace RentCarWinFormsApp
             this.picbCar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.picbCar.Name = "picbCar";
             this.picbCar.Size = new System.Drawing.Size(341, 324);
-            this.picbCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picbCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picbCar.TabIndex = 0;
             this.picbCar.TabStop = false;
             // 
@@ -160,6 +160,7 @@ namespace RentCarWinFormsApp
             this.dgvCarList.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.dgvCarList.Name = "dgvCarList";
             this.dgvCarList.ReadOnly = true;
+            this.dgvCarList.RowHeadersWidth = 62;
             this.dgvCarList.RowTemplate.Height = 25;
             this.dgvCarList.Size = new System.Drawing.Size(341, 403);
             this.dgvCarList.TabIndex = 1;
@@ -225,7 +226,7 @@ namespace RentCarWinFormsApp
             // 
             // SelectingCarForRentalUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tlpnlSelectingCar);
             this.Controls.Add(this.tlpnlReservOrBack);
