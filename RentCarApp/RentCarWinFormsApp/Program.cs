@@ -1,3 +1,4 @@
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,15 @@ namespace RentCarWinFormsApp
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainCarRentalForm());
+            var sc = new ServiceCollection()
+                .AddSingleton<MainCarRentalForm>()
+                .AddSingleton<CarRentalTimeRangeUserControl>()
+                .AddSingleton<SelectingCarForRentalUserControl>()
+                .AddSingleton<CustomerDataUserControl>()
+                .AddSingleton<CarRentalConfirmationUserControl>();
+            var sp = sc.BuildServiceProvider();
+
+            Application.Run(sp.GetService<MainCarRentalForm>());
         }
     }
 }
