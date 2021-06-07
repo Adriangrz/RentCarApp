@@ -171,10 +171,10 @@ namespace RentCarWinFormsApp
             // 
             this.txtbName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbName.Location = new System.Drawing.Point(342, 9);
+            this.txtbName.Location = new System.Drawing.Point(342, 4);
             this.txtbName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtbName.Name = "txtbName";
-            this.txtbName.Size = new System.Drawing.Size(200, 21);
+            this.txtbName.Size = new System.Drawing.Size(200, 28);
             this.txtbName.TabIndex = 1;
             // 
             // lblName
@@ -182,10 +182,10 @@ namespace RentCarWinFormsApp
             this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblName.Location = new System.Drawing.Point(152, 9);
+            this.lblName.Location = new System.Drawing.Point(152, 4);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(33, 17);
+            this.lblName.Size = new System.Drawing.Size(48, 25);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Imię";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -205,10 +205,10 @@ namespace RentCarWinFormsApp
             // 
             this.txtbSurname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbSurname.Location = new System.Drawing.Point(343, 9);
+            this.txtbSurname.Location = new System.Drawing.Point(343, 4);
             this.txtbSurname.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtbSurname.Name = "txtbSurname";
-            this.txtbSurname.Size = new System.Drawing.Size(200, 21);
+            this.txtbSurname.Size = new System.Drawing.Size(200, 28);
             this.txtbSurname.TabIndex = 1;
             // 
             // lblSurname
@@ -216,10 +216,10 @@ namespace RentCarWinFormsApp
             this.lblSurname.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSurname.AutoSize = true;
             this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblSurname.Location = new System.Drawing.Point(151, 9);
+            this.lblSurname.Location = new System.Drawing.Point(151, 4);
             this.lblSurname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(67, 17);
+            this.lblSurname.Size = new System.Drawing.Size(96, 25);
             this.lblSurname.TabIndex = 0;
             this.lblSurname.Text = "Nazwisko";
             this.lblSurname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -239,10 +239,10 @@ namespace RentCarWinFormsApp
             // 
             this.txtbCity.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbCity.Location = new System.Drawing.Point(342, 9);
+            this.txtbCity.Location = new System.Drawing.Point(342, 4);
             this.txtbCity.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtbCity.Name = "txtbCity";
-            this.txtbCity.Size = new System.Drawing.Size(200, 21);
+            this.txtbCity.Size = new System.Drawing.Size(200, 28);
             this.txtbCity.TabIndex = 1;
             // 
             // lblCity
@@ -250,10 +250,10 @@ namespace RentCarWinFormsApp
             this.lblCity.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCity.AutoSize = true;
             this.lblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCity.Location = new System.Drawing.Point(151, 9);
+            this.lblCity.Location = new System.Drawing.Point(151, 4);
             this.lblCity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCity.Name = "lblCity";
-            this.lblCity.Size = new System.Drawing.Size(49, 17);
+            this.lblCity.Size = new System.Drawing.Size(70, 25);
             this.lblCity.TabIndex = 0;
             this.lblCity.Text = "Miasto";
             this.lblCity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -273,10 +273,10 @@ namespace RentCarWinFormsApp
             // 
             this.txtbStreet.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbStreet.Location = new System.Drawing.Point(342, 9);
+            this.txtbStreet.Location = new System.Drawing.Point(342, 4);
             this.txtbStreet.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtbStreet.Name = "txtbStreet";
-            this.txtbStreet.Size = new System.Drawing.Size(200, 21);
+            this.txtbStreet.Size = new System.Drawing.Size(200, 28);
             this.txtbStreet.TabIndex = 1;
             // 
             // lblStreet
@@ -284,10 +284,10 @@ namespace RentCarWinFormsApp
             this.lblStreet.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblStreet.AutoSize = true;
             this.lblStreet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblStreet.Location = new System.Drawing.Point(152, 9);
+            this.lblStreet.Location = new System.Drawing.Point(152, 4);
             this.lblStreet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStreet.Name = "lblStreet";
-            this.lblStreet.Size = new System.Drawing.Size(39, 17);
+            this.lblStreet.Size = new System.Drawing.Size(55, 25);
             this.lblStreet.TabIndex = 0;
             this.lblStreet.Text = "Ulica";
             this.lblStreet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -307,10 +307,10 @@ namespace RentCarWinFormsApp
             // 
             this.txtbPhoneNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbPhoneNumber.Location = new System.Drawing.Point(342, 9);
+            this.txtbPhoneNumber.Location = new System.Drawing.Point(342, 4);
             this.txtbPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtbPhoneNumber.Name = "txtbPhoneNumber";
-            this.txtbPhoneNumber.Size = new System.Drawing.Size(200, 21);
+            this.txtbPhoneNumber.Size = new System.Drawing.Size(200, 28);
             this.txtbPhoneNumber.TabIndex = 1;
             // 
             // lblPhoneNumber
@@ -318,10 +318,10 @@ namespace RentCarWinFormsApp
             this.lblPhoneNumber.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPhoneNumber.AutoSize = true;
             this.lblPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPhoneNumber.Location = new System.Drawing.Point(151, 9);
+            this.lblPhoneNumber.Location = new System.Drawing.Point(151, 4);
             this.lblPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(105, 17);
+            this.lblPhoneNumber.Size = new System.Drawing.Size(144, 25);
             this.lblPhoneNumber.TabIndex = 0;
             this.lblPhoneNumber.Text = "Numer telefonu";
             this.lblPhoneNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -341,10 +341,10 @@ namespace RentCarWinFormsApp
             // 
             this.txtbEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtbEmail.Location = new System.Drawing.Point(342, 9);
+            this.txtbEmail.Location = new System.Drawing.Point(342, 4);
             this.txtbEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtbEmail.Name = "txtbEmail";
-            this.txtbEmail.Size = new System.Drawing.Size(200, 21);
+            this.txtbEmail.Size = new System.Drawing.Size(200, 28);
             this.txtbEmail.TabIndex = 1;
             // 
             // lblEmail
@@ -352,10 +352,10 @@ namespace RentCarWinFormsApp
             this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEmail.Location = new System.Drawing.Point(151, 9);
+            this.lblEmail.Location = new System.Drawing.Point(151, 4);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(42, 17);
+            this.lblEmail.Size = new System.Drawing.Size(60, 25);
             this.lblEmail.TabIndex = 0;
             this.lblEmail.Text = "Email";
             this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -366,7 +366,7 @@ namespace RentCarWinFormsApp
             // 
             // CustomerDataUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tlpnlUserData);
             this.Controls.Add(this.pnlAcceptOrBack);

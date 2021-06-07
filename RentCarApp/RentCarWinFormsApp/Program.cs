@@ -15,6 +15,7 @@ namespace RentCarWinFormsApp
         [STAThread]
         static void Main()
         {
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             var sc = new ServiceCollection()

@@ -79,10 +79,10 @@ namespace RentCarWinFormsApp
             this.btnExitApp.FlatAppearance.BorderSize = 0;
             this.btnExitApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExitApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnExitApp.Location = new System.Drawing.Point(375, 34);
+            this.btnExitApp.Location = new System.Drawing.Point(375, 26);
             this.btnExitApp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnExitApp.Name = "btnExitApp";
-            this.btnExitApp.Size = new System.Drawing.Size(149, 47);
+            this.btnExitApp.Size = new System.Drawing.Size(149, 62);
             this.btnExitApp.TabIndex = 1;
             this.btnExitApp.Text = "Wyjście z aplikacji";
             this.btnExitApp.UseVisualStyleBackColor = false;
@@ -94,17 +94,17 @@ namespace RentCarWinFormsApp
             this.btnBackToApp.FlatAppearance.BorderSize = 0;
             this.btnBackToApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBackToApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBackToApp.Location = new System.Drawing.Point(179, 34);
+            this.btnBackToApp.Location = new System.Drawing.Point(179, 26);
             this.btnBackToApp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnBackToApp.Name = "btnBackToApp";
-            this.btnBackToApp.Size = new System.Drawing.Size(149, 47);
+            this.btnBackToApp.Size = new System.Drawing.Size(149, 62);
             this.btnBackToApp.TabIndex = 0;
             this.btnBackToApp.Text = "Powrót do początku aplikacji";
             this.btnBackToApp.UseVisualStyleBackColor = false;
             // 
             // CarRentalConfirmationUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlConfirmation);
             this.Controls.Add(this.pnlOptions);

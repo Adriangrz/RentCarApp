@@ -93,10 +93,10 @@ namespace RentCarWinFormsApp
             // 
             this.lblPicCar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPicCar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPicCar.Location = new System.Drawing.Point(8, 144);
+            this.lblPicCar.Location = new System.Drawing.Point(8, 128);
             this.lblPicCar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPicCar.Name = "lblPicCar";
-            this.lblPicCar.Size = new System.Drawing.Size(324, 36);
+            this.lblPicCar.Size = new System.Drawing.Size(324, 69);
             this.lblPicCar.TabIndex = 2;
             this.lblPicCar.Text = "Wybierz samochód by zobaczyć jego wygląd";
             this.lblPicCar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -127,10 +127,10 @@ namespace RentCarWinFormsApp
             // 
             this.lblTotalRentalPrice.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTotalRentalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTotalRentalPrice.Location = new System.Drawing.Point(54, 41);
+            this.lblTotalRentalPrice.Location = new System.Drawing.Point(18, 41);
             this.lblTotalRentalPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalRentalPrice.Name = "lblTotalRentalPrice";
-            this.lblTotalRentalPrice.Size = new System.Drawing.Size(232, 31);
+            this.lblTotalRentalPrice.Size = new System.Drawing.Size(304, 31);
             this.lblTotalRentalPrice.TabIndex = 1;
             this.lblTotalRentalPrice.Text = "Wybierz samochód by zobaczyć całkowitą cene";
             this.lblTotalRentalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -139,10 +139,10 @@ namespace RentCarWinFormsApp
             // 
             this.lblTotalRentalPriceTag.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTotalRentalPriceTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTotalRentalPriceTag.Location = new System.Drawing.Point(39, 8);
+            this.lblTotalRentalPriceTag.Location = new System.Drawing.Point(6, 3);
             this.lblTotalRentalPriceTag.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalRentalPriceTag.Name = "lblTotalRentalPriceTag";
-            this.lblTotalRentalPriceTag.Size = new System.Drawing.Size(262, 22);
+            this.lblTotalRentalPriceTag.Size = new System.Drawing.Size(329, 27);
             this.lblTotalRentalPriceTag.TabIndex = 0;
             this.lblTotalRentalPriceTag.Text = "Całkowita cena wypożyczenia";
             this.lblTotalRentalPriceTag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
