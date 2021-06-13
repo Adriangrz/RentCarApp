@@ -42,23 +42,30 @@ namespace RentCarWinFormsApp
 
         private async void DgvCarList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvCarList.Columns[e.ColumnIndex].Name != "ShowCar")
-                return;
-            var carId = dgvCarList.Rows[e.RowIndex].Cells[dgvCarList.Columns["CarId"].Index].Value;
-            bool parseIsSuccess = decimal.TryParse(dgvCarList.Rows[e.RowIndex].Cells[dgvCarList.Columns["Price"].Index].Value.ToString(), out decimal price);
-            if (!parseIsSuccess)
+            try
             {
-                MessageBox.Show("Coś poszło nie tak");
-                return;
-            }
-            lblPicCar.Visible = false;
-            using var ms = new MemoryStream(await DatabaseManagement.GetCarImage(carId));
-            picbCar.Image = Image.FromStream(ms);
+                if (dgvCarList.Columns[e.ColumnIndex].Name != "ShowCar")
+                    return;
+                var carId = dgvCarList.Rows[e.RowIndex].Cells[dgvCarList.Columns["CarId"].Index].Value;
+                bool parseIsSuccess = decimal.TryParse(dgvCarList.Rows[e.RowIndex].Cells[dgvCarList.Columns["Price"].Index].Value.ToString(), out decimal price);
+                if (!parseIsSuccess)
+                {
+                    MessageBox.Show("Coś poszło nie tak");
+                    return;
+                }
+                lblPicCar.Visible = false;
+                using var ms = new MemoryStream(await DatabaseManagement.GetCarImage(carId));
+                picbCar.Image = Image.FromStream(ms);
 
-            var rentTime = (CarRentalTo - CarRentalFrom).TotalDays;
-            TotalPrice = (decimal)(rentTime * decimal.ToDouble(price));
-            lblTotalRentalPrice.Text = (TotalPrice).ToString("0.##");
-            CarId = (Guid)carId;
+                var rentTime = (CarRentalTo - CarRentalFrom).TotalDays;
+                TotalPrice = (decimal)(rentTime * decimal.ToDouble(price));
+                lblTotalRentalPrice.Text = (TotalPrice).ToString("0.##");
+                CarId = (Guid)carId;
+            }
+            catch
+            {
+                MessageBox.Show("Uwaga! Coś poszło nie tak");
+            }
         }
     }
 }

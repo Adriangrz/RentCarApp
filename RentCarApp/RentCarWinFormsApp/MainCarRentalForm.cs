@@ -54,18 +54,25 @@ namespace RentCarWinFormsApp
 
         private async void BtnSelectTimeRange_Click(object sender, EventArgs e)
         {
-            DateTime carRentalFrom = _carRentalTimeRangeUserControl.RentFromDate;
-            DateTime carRentalTo = _carRentalTimeRangeUserControl.RentToDate;
-            if (carRentalTo.CompareTo(carRentalFrom) <= 0)
+            try
             {
-                MessageBox.Show("Data zwrotu nie może być mniejsza lub równa odbioru");
-                return;
+                DateTime carRentalFrom = _carRentalTimeRangeUserControl.RentFromDate;
+                DateTime carRentalTo = _carRentalTimeRangeUserControl.RentToDate;
+                if (carRentalTo.CompareTo(carRentalFrom) <= 0)
+                {
+                    MessageBox.Show("Data zwrotu nie może być mniejsza lub równa odbioru");
+                    return;
+                }
+                _selectingCarForRentalUserControl.CarListToRent = await DatabaseManagement.GetCarList(carRentalFrom, carRentalTo);
+                _selectingCarForRentalUserControl.CarRentalFrom = carRentalFrom;
+                _selectingCarForRentalUserControl.CarRentalTo = carRentalTo;
+                pnlMain.Controls.Clear();
+                pnlMain.Controls.Add(_selectingCarForRentalUserControl);
             }
-            _selectingCarForRentalUserControl.CarListToRent = await DatabaseManagement.GetCarList(carRentalFrom, carRentalTo);
-            _selectingCarForRentalUserControl.CarRentalFrom = carRentalFrom;
-            _selectingCarForRentalUserControl.CarRentalTo = carRentalTo;
-            pnlMain.Controls.Clear();
-            pnlMain.Controls.Add(_selectingCarForRentalUserControl);
+            catch
+            {
+                MessageBox.Show("Uwaga! Coś poszło nie tak");
+            }
         }
 
         private void BtnReserv_Click(object sender, EventArgs e)
@@ -81,14 +88,21 @@ namespace RentCarWinFormsApp
 
         private async void BtnConfirmRental_Click(object sender, EventArgs e)
         {
-            if (!_customerDataUserControl.CheckIfAllCustomerDataAreProvided())
-                return;
-            DateTime carRentalFrom = _carRentalTimeRangeUserControl.RentFromDate;
-            DateTime carRentalTo = _carRentalTimeRangeUserControl.RentToDate;
-            decimal totalCost = _selectingCarForRentalUserControl.TotalPrice;
-            await DatabaseManagement.SaveRentalDetails(_customerDataUserControl, _selectingCarForRentalUserControl, carRentalFrom, carRentalTo, totalCost);
-            pnlMain.Controls.Clear();
-            pnlMain.Controls.Add(_carRentalConfirmationUserControl);
+            try
+            {
+                if (!_customerDataUserControl.CheckIfAllCustomerDataAreProvided())
+                    return;
+                DateTime carRentalFrom = _carRentalTimeRangeUserControl.RentFromDate;
+                DateTime carRentalTo = _carRentalTimeRangeUserControl.RentToDate;
+                decimal totalCost = _selectingCarForRentalUserControl.TotalPrice;
+                await DatabaseManagement.SaveRentalDetails(_customerDataUserControl, _selectingCarForRentalUserControl, carRentalFrom, carRentalTo, totalCost);
+                pnlMain.Controls.Clear();
+                pnlMain.Controls.Add(_carRentalConfirmationUserControl);
+            }
+            catch
+            {
+                MessageBox.Show("Uwaga! Coś poszło nie tak");
+            }
         }
 
         private void BtnBackToSelectingCarForRental_Click(object sender, EventArgs e)
